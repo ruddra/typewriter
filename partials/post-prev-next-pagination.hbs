@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="post-navigation prev column small-6 large-6">
+    {{#prev_post}}
+    <a href="{{url}}" class="post-navigation__link grey-bg block ell">
+      <div data-icon="ei-chevron-left"></div>
+      <span class="post-navigation__title">{{title}}</span>
+    </a>
+    {{/prev_post}}
+  </div>
+
+  <div class="post-navigation next column small-6 large-6">
+    {{#next_post}}
+    <a href="{{url}}" class="post-navigation__link grey-bg block ell">
+      <span class="post-navigation__title">{{title}}</span>
+      <div data-icon="ei-chevron-right"></div>
+    </a>
+    {{/next_post}}
+  </div>
+</div>

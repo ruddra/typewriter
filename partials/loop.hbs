@@ -1,0 +1,29 @@
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+<article class="post-card {{post_class}}" itemscope="" itemtype="http://schema.org/Article">
+
+  <header class="post-header">
+    <h2 class="post__title">
+      <a itemprop="headline" href="{{url}}">{{title}}</a>
+    </h2>
+    <time class="post__date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
+  </header>
+
+  <section class="post__excerpt">
+    <p itemprop="description">{{excerpt}}</p>
+  </section>
+
+  <footer class="post__meta">
+    {{#if author.image}}
+    <img class="post__meta__author-thumb" src="{{author.image}}" alt="{{author.name}}" nopin="nopin" />
+    {{/if}}
+    <span class="post__meta__author-name" itemprop="author">
+      {{author}}
+    </span>
+  </footer>
+
+</article>
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page - this is a custom pagination partial}}
+{{pagination}}

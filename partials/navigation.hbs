@@ -1,0 +1,21 @@
+<div class="header-wrapper">
+
+  <header>
+    <h1 class="logo"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+  </header>
+
+  <label for="menu-toggle" class="menu-toggle-button">Menu</label>
+  <input type="checkbox" id="menu-toggle">
+
+  <div class="site-nav">
+    <nav>
+      <ul class="list-bare">
+        {{#foreach navigation}}
+        <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        {{/foreach}}
+        <li><a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">RSS</a></li>
+      </ul>
+    </nav>
+  </div>
+
+</div>

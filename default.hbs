@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{! Document Settings }}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  {{! Page Meta }}
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="{{asset "/favicon.ico"}}">
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,300" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/evil-icons/1.7.8/evil-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/evil-icons/1.7.8/evil-icons.min.js"></script>
+  <link rel="stylesheet" href="{{asset "css/main.min.css"}}">
+
+  {{! Ghost outputs important style and meta data with this tag }}
+  {{ghost_head}}
+</head>
+<body class="{{body_class}} typesettings">
+
+  {{! Everything else gets inserted here }}
+  <div class="wrapper">
+    <div class="row">
+      <div class="column medium-3 large-3">
+        {{navigation}}
+      </div>
+      <div class="column medium-9 large-9">
+        {{{body}}}
+      </div>
+    </div>
+  </div>
+
+  {{> "footer"}}
+
+  {{! Ghost outputs important scripts and data with this tag }}
+  {{ghost_foot}}
+
+  {{! The main JavaScript files }}
+  <script type="text/javascript" src="{{asset "js/jquery-2.1.4.min.js"}}"></script>
+  <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+  <script type="text/javascript" src="{{asset "js/script.js"}}"></script>
+
+</body>
+</html>

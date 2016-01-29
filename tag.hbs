@@ -1,0 +1,21 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The main content area on the homepage }}
+
+<header class="page-header box">
+  <div data-icon="ei-tag" data-size="s" class="box__icon"></div>
+  <div class="box__body">
+    <h4 class="box__title">{{tag.name}}</h4>
+    {{#if tag.description}}
+    <p class="box__text">
+      {{tag.description}}
+    </p>
+    {{/if}}
+  </div>
+</header>
+
+<main id="content" class="content tag-template" role="main">
+  {{! The tag below includes the post loop - partials/loop.hbs }}
+  {{> "loop"}}
+</main>
