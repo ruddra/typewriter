@@ -10,10 +10,8 @@ body {
   font-family: $font__serif;
   line-height: $line-height__base;
 
-  @media #{$medium-down} {
-    font-size: $font-size__medium;
-    line-height: $line-height__medium;
-  }
+  -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
