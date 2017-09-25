@@ -6,7 +6,7 @@ TypeWriter is a minimalist Ghost theme, focus on typography, white space, and gi
 
 - Minimal design
 - Beautiful Typography
-- Ready for Ghost latest version
+- Ready for Ghost 1.0
 - HTML5 / CSS3 valid code
 - 100% Responsive layout
 - Multi author support
@@ -19,9 +19,7 @@ TypeWriter is a minimalist Ghost theme, focus on typography, white space, and gi
 - 404 Page
 - Next & Previous Post Navigation
 - Social media icons
-- Easy setup with easy to follow instructions
-- Syntax Highlighting
-- Gulp & Uncompressed SASS Source Files
+- Gulp & SASS Source Files
 
 * * *
 
@@ -45,4 +43,4 @@ This will compile Sass, and start watching changes as you edit files.
 
 * * *
 
-👉 Visit [aspirehemes.com](http://aspirethemes.com) for more WordPress and Ghost themes.
+👉 Visit [aspirehemes.com](http://aspirethemes.com) for more Ghost, WordPress, and Jekyll themes.

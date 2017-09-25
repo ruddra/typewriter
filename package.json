@@ -1,6 +1,6 @@
 {
-  "name": "Typewriter",
-  "version": "1.0.0",
+  "name": "typewriter",
+  "version": "1.0.1",
   "description": "Typewriter Ghost Theme",
   "main": "gulpfile.js",
   "dependencies": {
@@ -9,11 +9,16 @@
     "gulp-minify-css": "^0.4.6",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.4",
-    "run-sequence": "^1.1.2"
-  },
-  "author": "Aspire Themes",
-  "devDependencies": {
+    "run-sequence": "^1.1.2",
     "gulp-plumber": "^1.0.1",
     "gulp-util": "^3.0.7"
+  },
+  "author": {
+    "name": "Aspire Themes",
+    "email": "aspirethemes@gmail.com",
+    "url": "https://aspirethemes.com/"
+  },
+  "config": {
+    "posts_per_page": 8
   }
 }
