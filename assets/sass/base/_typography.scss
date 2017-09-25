@@ -25,6 +25,7 @@ h6 {
   font-family: $font__serif;
   font-size: $font-size__base;
   margin: 0 0 $line-height__medium;
+  line-height: initial;
 
   @media #{$medium-down} {
     font-size: $font-size__medium;
