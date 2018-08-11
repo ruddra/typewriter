@@ -7,7 +7,7 @@ the {body} of the default.hbs template, which contains our header/footer. }}
 {{#post}}
 
 <header class="post-header">
-  <h2 class="post__title">{{ title }}</h2>
+  <h1 class="post__title">{{ title }}</h1>
   <time class="post__date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
 </header>
 
@@ -17,14 +17,23 @@ the {body} of the default.hbs template, which contains our header/footer. }}
 
     <section class="post-content">
       {{ content }}
-
-      <div class="post-tags">
-        {{tags separator=""}}
-      </div>
     </section>
-
+    <section>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-format="fluid"
+          data-ad-layout-key="-fr+61+3n-cq+95"
+          data-ad-client="ca-pub-8759766969256762"
+          data-ad-slot="4487836391"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </section>
+    <div class="">
+      <b>Tags:</b> {{tags separator=", "}}
+    </div>
     <hr>
-
     <footer class="post-footer">
       {{> share}}
     </footer>

@@ -1,7 +1,7 @@
 <div class="header-wrapper">
 
   <header>
-    <h1 class="logo"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+    <h1 class="logo"><a href="https://ruddra.com">{{@blog.title}}</a></h1>
   </header>
 
   <label for="menu-toggle" class="menu-toggle-button">Menu</label>
@@ -11,9 +11,8 @@
     <nav>
       <ul class="list-bare">
         {{#foreach navigation}}
-        <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url}}">{{label}}</a></li>
         {{/foreach}}
-        <li><a class="subscribe-button icon-feed" href="http://ruddra.com/rss/index.rss">RSS</a></li>
       </ul>
     </nav>
   </div>
